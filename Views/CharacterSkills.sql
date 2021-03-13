@@ -10,3 +10,6 @@ AS
 	(Select c.Character_Id, c.Character_Name, cs.Skill_Name From Characters c
 	Inner join Characters_Skills cs
 	On cs.Character_Id = c.Character_Id)
+
+
+--https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15

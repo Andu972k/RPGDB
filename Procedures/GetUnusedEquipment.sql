@@ -34,3 +34,5 @@ AS
 		On e.Equipment_Id = c.Right_Hand
 		Where c.Right_Hand is NULL And Type = 'Right_Hand';
 	END;
+
+	--https://docs.microsoft.com/en-us/sql/t-sql/statements/create-procedure-transact-sql?view=sql-server-ver15
