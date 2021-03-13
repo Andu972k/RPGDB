@@ -14,3 +14,4 @@ Begin
 	Return(@AvailableSpace)
 END;
 
+--https://docs.microsoft.com/en-us/sql/t-sql/statements/create-function-transact-sql?view=sql-server-ver15#examples
