@@ -4,21 +4,32 @@
 Insert Into Profiles (Name, Password, Email) Values ('BOB', 'BobsPassword', 'BOBsEmail@gmail.BOB');
 Insert Into Profiles (Name, Password, Email) Values ('KIM', 'KimsPassword', 'KimsChips@gmail.Kim');
 
+--EquipmentType
+
+Insert Into EquipmentType (Name) Values ('Head');
+Insert Into EquipmentType (Name) Values ('Chest');
+Insert Into EquipmentType (Name) Values ('Hands');
+Insert Into EquipmentType (Name) Values ('Legs');
+Insert Into EquipmentType (Name) Values ('Feet');
+Insert Into EquipmentType (Name) Values ('Left_Hand');
+Insert Into EquipmentType (Name) Values ('Right_Hand');
+
+
 --Equipment
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Plain Helmet', 'Head', 'Just a plain Helmet nothing special', 0, 0, 2);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Legendary Helmet', 'Head', 'Just an Ordinary Legendary Helmet', 10, 20, 100);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Leather armor', 'Chest', 'Made of sturdy leather', 2, 0, 5);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Dragon armor', 'Chest', 'Forged With the Fire of an Elder dragon', 100, 100, 500);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Simple Gloves', 'Hands', 'Made of simple Leather', 0, 2, 2);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Golden Gloves', 'Hands', 'You cannot wear these gloves, go level up to 999', 0, 999, 2);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Simple Leggings', 'Legs', 'Made of simple Leather', 6, 0, 4);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Reality Bending Pants', 'Legs', 'Made from a mystical fabric that can bend reality', 200, 1, 350);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Socks and Sandals', 'Feet', 'Most people would say WHY?', 0, 1, 1);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Socks and Sandals of legend', 'Feet', 'Makes people say why not?', 99, 99, 99);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Dull Dagger', 'Left_Hand', 'Pretty dull indeed', 0, -2, 2);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Shield of shielding', 'Left_Hand', 'Protects you from everything except other shields', 69, 20, 1000);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Sharp Dagger', 'Right_Hand', 'Ouch', 0, 30, -30);
-Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Wand of Time', 'Right_Hand', 'Stops time for everyone else', 0, 99999999, -400);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Plain Helmet', 1, 'Just a plain Helmet nothing special', 0, 0, 2);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Legendary Helmet', 1, 'Just an Ordinary Legendary Helmet', 10, 20, 100);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Leather armor', 2, 'Made of sturdy leather', 2, 0, 5);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Dragon armor', 2, 'Forged With the Fire of an Elder dragon', 100, 100, 500);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Simple Gloves', 3, 'Made of simple Leather', 0, 2, 2);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Golden Gloves', 3, 'You cannot wear these gloves, go level up to 999', 0, 999, 2);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Simple Leggings', 4, 'Made of simple Leather', 6, 0, 4);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Reality Bending Pants', 4, 'Made from a mystical fabric that can bend reality', 200, 1, 350);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Socks and Sandals', 5, 'Most people would say WHY?', 0, 1, 1);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Socks and Sandals of legend', 5, 'Makes people say why not?', 99, 99, 99);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Dull Dagger', 6, 'Pretty dull indeed', 0, -2, 2);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Shield of shielding', 6, 'Protects you from everything except other shields', 69, 20, 1000);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Sharp Dagger', 7, 'Ouch', 0, 30, -30);
+Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Wand of Time', 7, 'Stops time for everyone else', 0, 99999999, -400);
 --Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Helmet of Epic Testing', 'Head')
 
 --Items

@@ -24,21 +24,27 @@ Description Nvarchar(150) Null,
 Effect Nvarchar(150) Not Null
 );
 
-Create Table Items(
+Create Table Items (
 Item_Name Nvarchar(30) Primary Key,
 Type Nvarchar(15) Not Null,
 Description Nvarchar(150) Null,
 Effect Nvarchar(150) Not Null
 );
 
+Create Table EquipmentType (
+EquipmentType_Id TinyInt Identity Primary Key,
+Name Nvarchar(10) Not Null
+);
+
 Create Table Equipment (
-Equipment_Id Int Identity Primary Key,
+Equipment_Id SmallInt Identity Primary Key,
 Name Nvarchar(30) Not Null,
-Type Nvarchar(10) Not Null,
+EquipmentType TinyInt Not Null,
 Description Nvarchar(150) Null,
 HP Int Default 0,
 Atk Int Default 0,
-Def Int Default 0
+Def Int Default 0,
+Foreign Key (EquipmentType) References EquipmentType(EquipmentType_Id)
 );
 
 Create Table Characters (
@@ -48,13 +54,13 @@ HP Int Not Null,
 Atk Int Not Null,
 Def Int Not Null,
 UID Int Not Null,
-Head Int Null,
-Chest Int Null,
-Hands Int Null,
-Legs Int Null,
-Feet Int Null,
-Left_Hand Int Null,
-Right_Hand Int Null,
+Head SmallInt Null,
+Chest SmallInt Null,
+Hands SmallInt Null,
+Legs SmallInt Null,
+Feet SmallInt Null,
+Left_Hand SmallInt Null,
+Right_Hand SmallInt Null,
 Foreign Key (UID) References Profiles(UID),
 Foreign Key (Head) References Equipment(Equipment_ID),
 Foreign Key (Chest) References Equipment(Equipment_ID),
@@ -84,7 +90,7 @@ Foreign Key (Item_Name) References Items(Item_Name)
 
 Create Table Inventory_Equipment (
 Inventory_Id Int Not Null,
-Equipment_Id Int Not Null,
+Equipment_Id SmallInt Not Null,
 Quantity Int Not Null,
 Primary Key (Inventory_Id, Equipment_Id),
 Foreign Key (Inventory_Id) References Inventory(Inventory_Id),
