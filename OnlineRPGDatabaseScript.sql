@@ -73,10 +73,9 @@ Foreign Key (Right_Hand) References Equipment(Equipment_ID)
 
 Create Table Inventory (
 Inventory_Id Int Identity Primary Key,
-Character_Id Int Not Null,
 Maximum_Space Int Not Null,
 Occupied_Space Int Not Null,
-Foreign Key (Character_Id) References Characters(Character_Id)
+Foreign Key (Inventory_Id) References Characters(Character_Id)
 );
 
 Create Table Inventory_Items (
