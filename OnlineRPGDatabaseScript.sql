@@ -72,7 +72,7 @@ Foreign Key (Right_Hand) References Equipment(Equipment_ID)
 );
 
 Create Table Inventory (
-Inventory_Id Int Identity Primary Key,
+Inventory_Id Int Primary Key,
 Maximum_Space Int Not Null,
 Occupied_Space Int Not Null,
 Foreign Key (Inventory_Id) References Characters(Character_Id)

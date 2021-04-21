@@ -2,7 +2,7 @@
 
 
 Create NONCLUSTERED Index IX_Equipment_Type
-On dbo.Equipment (Type);
+On dbo.Equipment (EquipmentType);
 
 
 --Select Type, COUNT(*) as Total From Equipment

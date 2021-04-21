@@ -8,15 +8,15 @@ As Begin
 	Set NOCOUNT On;
 	If UPDATE (Head)
 		Begin
-			If (Select Quantity From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Character_Id Inner join Inventory_Equipment InvE On Inv.Inventory_Id = InvE.Inventory_Id And i.Head = InvE.Equipment_Id) = 1
+			If (Select Quantity From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Inventory_Id Inner join Inventory_Equipment InvE On Inv.Inventory_Id = InvE.Inventory_Id And i.Head = InvE.Equipment_Id) = 1
 				Delete From Inventory_Equipment
 				From inserted
-				Where Equipment_Id = inserted.Head And (Select Inv.Inventory_Id From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Character_Id) = Inventory_Id
-			if (Select Quantity From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Character_Id Inner join Inventory_Equipment InvE On Inv.Inventory_Id = InvE.Inventory_Id And i.Head = InvE.Equipment_Id) > 1
+				Where Equipment_Id = inserted.Head And (Select Inv.Inventory_Id From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Inventory_Id) = Inventory_Id
+			if (Select Quantity From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Inventory_Id Inner join Inventory_Equipment InvE On Inv.Inventory_Id = InvE.Inventory_Id And i.Head = InvE.Equipment_Id) > 1
 				Update Inventory_Equipment
 				set Quantity = Quantity-1
 				From inserted
-				Where Equipment_Id = inserted.Head And (Select Inv.Inventory_Id From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Character_Id) = Inventory_Id
+				Where Equipment_Id = inserted.Head And (Select Inv.Inventory_Id From inserted i Inner join Inventory Inv On i.Character_Id = Inv.Inventory_Id) = Inventory_Id
 			
 		End;
 End;

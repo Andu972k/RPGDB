@@ -1,5 +1,5 @@
 ﻿--Integrity Tests
---Insert Into Inventory (Character_Id, Maximum_Space, Occupied_Space) Values (1, 5, 2);
+--Insert Into Inventory (Inventory_Id, Maximum_Space, Occupied_Space) Values (1, 5, 2);
 --Insert Into Characters_Passives (Character_Id, Passive_Name) Values (2, 'BOB')
 --Insert Into Characters (Character_Name, HP, Atk, Def, UID, Head) Values ('Hello_Bob', 1, 0, 1000000, 1, 2);
 

@@ -57,9 +57,9 @@ Insert Into Characters (Character_Name, HP, Atk, Def, UID, Head, Chest, Hands, L
 
 
 --Inventory
-Insert Into Inventory (Character_Id, Maximum_Space, Occupied_Space) Values (1, 5600, 2);
-Insert Into Inventory (Character_Id, Maximum_Space, Occupied_Space) Values (2, 10, 5);
-Insert Into Inventory (Character_Id, Maximum_Space, Occupied_Space) Values (3, 500, 300);
+Insert Into Inventory (Inventory_Id, Maximum_Space, Occupied_Space) Values (1, 5600, 2);
+Insert Into Inventory (Inventory_Id, Maximum_Space, Occupied_Space) Values (2, 10, 5);
+Insert Into Inventory (Inventory_Id, Maximum_Space, Occupied_Space) Values (3, 500, 300);
 
 
 --When equipment is equipped it leaves the iventory, but is added again when it is unequipped
