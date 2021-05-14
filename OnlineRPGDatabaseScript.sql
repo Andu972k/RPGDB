@@ -8,7 +8,7 @@ Use OnlineRPG
 Create Table Profiles (
 UID int Identity Primary Key,
 Name Nvarchar(14) Not Null,
-Password Nvarchar(16) Not Null,
+Password Nvarchar(100) Not Null,
 Email Nvarchar(60) Not Null
 );
 
