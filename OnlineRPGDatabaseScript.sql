@@ -26,9 +26,14 @@ Effect Nvarchar(150) Not Null
 
 Create Table Items (
 Item_Name Nvarchar(30) Primary Key,
-Type Nvarchar(15) Not Null,
+Type TinyInt Not Null,
 Description Nvarchar(150) Null,
 Effect Nvarchar(150) Not Null
+);
+
+Create Table ItemType(
+Type_Id TinyInt Identity Primary Key,
+Type Nvarchar(15) Not Null
 );
 
 Create Table EquipmentType (
