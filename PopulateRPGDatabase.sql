@@ -37,12 +37,12 @@ Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('
 --Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Helmet of Epic Testing', 'Head')
 
 --Items
-Insert Into Items (Item_Name, Type, Description, Effect) Values ('Mushroom', '1', 'A random mushroom, good on a pizza', 'Does something random');
-Insert Into Items (Item_Name, Type, Description, Effect) Values ('Big Health Potion', '2', 'A big Health potion made by the potion Guild', 'Heals for 60%');
-Insert Into Items (Item_Name, Type, Description, Effect) Values ('Skill book', '2', 'An average skill book', 'Teaches next skill');
-Insert Into Items (Item_Name, Type, Description, Effect) Values ('Summoning Scroll', '2', 'Scroll used by brave adventurers for summoning enemies', 'Summons an enemy of your choice');
-Insert Into Items (Item_Name, Type, Description, Effect) Values ('Iron Bar', '3', 'Iron Bar used for crafting', 'Def + 1');
-Insert Into Items (Item_Name, Type, Description, Effect) Values ('Pocket dust', '4', 'Dust that always ends up in someones pocket', 'No effect');
+Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Mushroom', '1', 'A random mushroom, good on a pizza', 'Does something random');
+Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Big Health Potion', '2', 'A big Health potion made by the potion Guild', 'Heals for 60%');
+Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Skill book', '2', 'An average skill book', 'Teaches next skill');
+Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Summoning Scroll', '2', 'Scroll used by brave adventurers for summoning enemies', 'Summons an enemy of your choice');
+Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Iron Bar', '3', 'Iron Bar used for crafting', 'Def + 1');
+Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Pocket dust', '4', 'Dust that always ends up in someones pocket', 'No effect');
 
 --ItemType
 Insert into ItemType (Type) values ('Ingredient');

@@ -31,18 +31,20 @@ Description Nvarchar(150) Null,
 Effect Nvarchar(150) Not Null
 );
 
+Create Table ItemType(
+Type_Id TinyInt Identity Primary Key,
+Type Nvarchar(15) Not Null
+);
+
 Create Table Items (
 Item_Name Nvarchar(30) Primary Key,
 Type_Id TinyInt Not Null,
 Description Nvarchar(150) Null,
 Effect Nvarchar(150) Not Null,
-Foreign Key (Type) references ItemType(Type_Id)
+Foreign Key (Type_Id) references ItemType(Type_Id)
 );
 
-Create Table ItemType(
-Type_Id TinyInt Identity Primary Key,
-Type Nvarchar(15) Not Null
-);
+
 
 Create Table EquipmentType (
 EquipmentType_Id TinyInt Identity Primary Key,
