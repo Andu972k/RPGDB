@@ -36,6 +36,12 @@ Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('
 Insert Into Equipment (Name, EquipmentType, Description, HP, Atk, Def) Values ('Wand of Time', 7, 'Stops time for everyone else', 0, 99999999, -400);
 --Insert Into Equipment (Name, Type, Description, HP, Atk, Def) Values ('Helmet of Epic Testing', 'Head')
 
+--ItemType
+Insert into ItemType (Type) values ('Ingredient');
+Insert into ItemType (Type) values ('Consumable');
+Insert into ItemType (Type) values ('Material');
+Insert into ItemType (Type) values ('Other');
+
 --Items
 Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Mushroom', '1', 'A random mushroom, good on a pizza', 'Does something random');
 Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Big Health Potion', '2', 'A big Health potion made by the potion Guild', 'Heals for 60%');
@@ -43,12 +49,6 @@ Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Skill book'
 Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Summoning Scroll', '2', 'Scroll used by brave adventurers for summoning enemies', 'Summons an enemy of your choice');
 Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Iron Bar', '3', 'Iron Bar used for crafting', 'Def + 1');
 Insert Into Items (Item_Name, Type_Id, Description, Effect) Values ('Pocket dust', '4', 'Dust that always ends up in someones pocket', 'No effect');
-
---ItemType
-Insert into ItemType (Type) values ('Ingredient');
-Insert into ItemType (Type) values ('Consumable');
-Insert into ItemType (Type) values ('Material');
-Insert into ItemType (Type) values ('Other');
 
 --Passives
 Insert Into Passives (Passive_Name, Description, Effect) Values ('Patience', 'A good ability', 'Increases Def by 10%');
