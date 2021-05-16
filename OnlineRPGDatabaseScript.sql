@@ -5,11 +5,18 @@ Create Database OnlineRPG;
 
 Use OnlineRPG
 
+Create Table Role(
+Role_Id TinyInt Identity Primary Key,
+Role_Name Nvarchar(5)
+);
+
 Create Table Profiles (
 UID int Identity Primary Key,
 Name Nvarchar(14) Not Null,
 Password Nvarchar(100) Not Null,
-Email Nvarchar(60) Not Null
+Email Nvarchar(60) Not Null,
+Role_Id TinyInt Not Null,
+Foreign Key (Role_Id) References Role(Role_Id)
 );
 
 Create Table Skills (
@@ -26,9 +33,10 @@ Effect Nvarchar(150) Not Null
 
 Create Table Items (
 Item_Name Nvarchar(30) Primary Key,
-Type TinyInt Not Null,
+Type_Id TinyInt Not Null,
 Description Nvarchar(150) Null,
-Effect Nvarchar(150) Not Null
+Effect Nvarchar(150) Not Null,
+Foreign Key (Type) references ItemType(Type_Id)
 );
 
 Create Table ItemType(
