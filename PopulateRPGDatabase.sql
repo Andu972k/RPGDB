@@ -1,12 +1,12 @@
 ﻿--Populate OnlineRPG Database
 
---Profiles
-Insert Into Profiles (Name, Password, Email, Role_Id) Values ('BOB', 'BobsPassword', 'BOBsEmail@gmail.BOB', '2');
-Insert Into Profiles (Name, Password, Email, Role_Id) Values ('KIM', 'KimsPassword', 'KimsChips@gmail.Kim', '1');
-
 --Roles
 insert into Role (Role_Name) values ('Admin');
 insert into Role (Role_Name) values ('User');
+
+--Profiles
+Insert Into Profiles (Name, Password, Email, Role_Id) Values ('BOB', 'BobsPassword', 'BOBsEmail@gmail.BOB', '2');
+Insert Into Profiles (Name, Password, Email, Role_Id) Values ('KIM', 'KimsPassword', 'KimsChips@gmail.Kim', '1');
 
 --EquipmentType
 
