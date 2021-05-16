@@ -5,8 +5,8 @@ insert into Role (Role_Name) values ('Admin');
 insert into Role (Role_Name) values ('User');
 
 --Profiles
-Insert Into Profiles (Name, Password, Email, Role_Id) Values ('BOB', 'BobsPassword', 'BOBsEmail@gmail.BOB', '2');
-Insert Into Profiles (Name, Password, Email, Role_Id) Values ('KIM', 'KimsPassword', 'KimsChips@gmail.Kim', '1');
+Insert Into Profiles (Name, Password, Email, Role_Id) Values ('BOB', 'V?#b\u0003<????\\??Nd?\u0014????FN?\u0006YN3?\u001c??', 'BOBsEmail@gmail.BOB', '2'); --Password: BobsPassword
+Insert Into Profiles (Name, Password, Email, Role_Id) Values ('KIM', '~?U??c?o??_av/x?\u001cz\u0012?$?l4\u0005????\u0017h?', 'KimsChips@gmail.Kim', '1'); --Password: KimsPassword 
 
 --EquipmentType
 
