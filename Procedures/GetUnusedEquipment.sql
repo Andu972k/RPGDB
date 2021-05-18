@@ -9,7 +9,7 @@ AS
 		Left Join EquipmentType et On e.EquipmentType = et.EquipmentType_Id
 		Full Join Characters c On e.Equipment_Id = c.Head OR c.Chest = e.Equipment_Id OR c.Hands = e.Equipment_Id OR c.Legs = e.Equipment_Id OR c.Feet = e.Equipment_Id OR c.Left_Hand = e.Equipment_Id OR c.Right_Hand = e.Equipment_Id
 		Where c.Character_Id is Null
-		order by et.Name, e.Equipment_Id
+		Order by et.Name, e.Equipment_Id
 	END;
 
 	--Version 1
